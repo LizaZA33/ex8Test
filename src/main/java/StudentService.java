@@ -6,7 +6,7 @@ public class StudentService {
     }
 
     public Student addStudent(int id, String name, int grade) {
-        if (grade < 0 || grade > 1000) {
+        if (grade < 0 || grade > 100) {
             throw new IllegalArgumentException("Оценка вне диапазона");
         }
         Student student = new Student(id, name, grade);
